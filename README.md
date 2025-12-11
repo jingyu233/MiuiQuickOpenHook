@@ -1,9 +1,10 @@
-# MiuiQuickOpenHook
+# MiuiQuickOpenHook 光学指纹快速打开增强
 
 [![GitHub license](https://img.shields.io/github/license/jingyu233/MiuiQuickOpenHook)](https://github.com/jingyu233/MiuiQuickOpenHook/blob/main/LICENSE)
 [![GitHub release](https://img.shields.io/github/v/release/jingyu233/MiuiQuickOpenHook)](https://github.com/jingyu233/MiuiQuickOpenHook/releases)
 [![GitHub stars](https://img.shields.io/github/stars/jingyu233/MiuiQuickOpenHook)](https://github.com/jingyu233/MiuiQuickOpenHook/stargazers)
 [![LSPosed Repo](https://img.shields.io/badge/LSPosed-Module-blue)](https://github.com/Xposed-Modules-Repo/com.jingyu233.miuiquickopenhook)
+[![Source Code](https://img.shields.io/badge/Source-GitHub-green)](https://github.com/jingyu233/MiuiQuickOpenHook)
 
 一个强大的 Xposed 模块，用于自定义 MIUI/HyperOS 系统的快速打开（Quick Open）功能。在光学指纹机型上，通过光学指纹解锁后持续按住，可以在解锁界面呼出快捷打开面板。本模块旨在 Hook 该功能，为用户提供除系统默认外的更多自定义可能性。
 
@@ -101,6 +102,7 @@
 [![GitHub release](https://img.shields.io/github/v/release/jingyu233/MiuiQuickOpenHook)](https://github.com/jingyu233/MiuiQuickOpenHook/releases)
 [![GitHub stars](https://img.shields.io/github/stars/jingyu233/MiuiQuickOpenHook)](https://github.com/jingyu233/MiuiQuickOpenHook/stargazers)
 [![LSPosed Repo](https://img.shields.io/badge/LSPosed-Module-blue)](https://github.com/Xposed-Modules-Repo/com.jingyu233.miuiquickopenhook)
+[![Source Code](https://img.shields.io/badge/Source-GitHub-green)](https://github.com/jingyu233/MiuiQuickOpenHook)
 
 A powerful Xposed module for customizing MIUI/HyperOS Quick Open functionality. On optical fingerprint devices, after unlocking via optical fingerprint, keeping your finger pressed can invoke the quick open panel on the lock screen. This module hooks into that feature to provide users with more customization possibilities beyond the system defaults.
 
