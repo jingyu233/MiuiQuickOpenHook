@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- 标题 -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MIUI快速打开Hook模块"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 模块状态卡片 -->
+        <LinearLayout
+            android:id="@+id/moduleStatusCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/card_background">
+
+            <View
+                android:id="@+id/moduleStatusIcon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/status_circle" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/moduleStatusText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="模块状态"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/moduleStatusDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="状态描述"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 描述文本 -->
+        <TextView
+            android:id="@+id/tv_link_full"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="在MIUI/HyperOS系统中，使用指纹解锁屏幕后长按指纹并向上滑动，可以快速选择各种快捷方式。"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 按钮组 -->
+        <Button
+            android:id="@+id/btnOpenConfig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="打开配置管理"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/btnCustomIcons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="自定义图标管理"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/btnClearConfig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="清空所有配置"
+            android:layout_marginTop="12dp" />
+
+
+        <!-- 配置文件路径 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/card_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="配置文件路径:"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvConfigPath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/data/data/.../shared_prefs/miui_config.xml"
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="monospace" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

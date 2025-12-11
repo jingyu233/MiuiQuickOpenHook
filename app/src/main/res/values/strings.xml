@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">MiuiQuickOpenHook</string>
+
+    <!-- Hook Log Messages -->
+    <string name="hook_module_loaded">Module loaded in process: %s</string>
+    <string name="hook_package">Package: %s</string>
+    <string name="hook_completed">Hook completed successfully</string>
+    <string name="hook_failed">Hook failed: %s</string>
+
+    <!-- Module Status -->
+    <string name="module_status_marked">Module status marked as active</string>
+    <string name="module_status_failed">Failed to mark module status: %s</string>
+    <string name="hook_application_failed">Failed to hook Application.onCreate: %s</string>
+
+    <!-- QuickOpenView Class -->
+    <string name="class_not_found">MiuiGxzwQuickOpenView class not found</string>
+    <string name="class_found">Found MiuiGxzwQuickOpenView class</string>
+    <string name="dump_methods_failed">Failed to dump methods: %s</string>
+
+    <!-- Animation Hook -->
+    <string name="before_system_execute">before: Let system execute normally</string>
+    <string name="animation_handle_failed">Handle animation failed: %s</string>
+    <string name="hook_animation_success">Successfully hooked startShowQuickOpenItemAnimation</string>
+    <string name="hook_animation_failed">Failed to hook startShowQuickOpenItemAnimation: %s</string>
+
+    <!-- Custom Item Creation -->
+    <string name="custom_using_config">Using custom config for itemId=%d (%s)</string>
+    <string name="custom_create_failed">Failed to create custom item: %s</string>
+    <string name="custom_no_config">Custom itemId=%d has no config and no system fallback (expected)</string>
+    <string name="system_item_failed">Failed to generate system item for id=%d: %s</string>
+    <string name="custom_mview_failed">Failed to set mView field: %s</string>
+    <string name="custom_proxy_success">Successfully created custom item proxy for %s</string>
+
+    <!-- Icon Loading -->
+    <string name="icon_app_loaded">Loaded app icon for %s</string>
+    <string name="icon_image_loaded">Loaded custom image for %s, size: %d bytes</string>
+    <string name="icon_decode_failed">Failed to decode bitmap for %s</string>
+    <string name="icon_load_failed">Failed to load custom image: %s</string>
+    <string name="icon_system_res_unsupported">SYSTEM_RES not yet supported</string>
+    <string name="icon_general_failed">Failed to load icon: %s</string>
+
+    <!-- Animation Logic -->
+    <string name="itemlist_empty">itemList is empty, skip</string>
+    <string name="field_not_found">Cannot find mRectF/mRegion fields for row1</string>
+    <string name="positions_saved">Saved %d positions from system</string>
+    <string name="views_cleaned">Cleaned all views via cleanQuickOpenItemList()</string>
+    <string name="screen_info">Screen info: width=%d, height=%d, density=%.2f</string>
+    <string name="row_disabled">Row %d disabled or empty, skip</string>
+
+    <!-- Layout Calculation -->
+    <string name="row_layout_calc">Row %d layout calculation:</string>
+    <string name="config_calc">Config: margin=%.1fdp, distanceFromBottom=%.1fdp</string>
+    <string name="density_calc">Density: %.2f</string>
+    <string name="horizontal_bounds">Horizontal bounds: xMin=%.1f, xMax=%.1f (range=%.1f)</string>
+    <string name="vertical_pos">Vertical position: distanceFromBottom=%.1fpx, rowCenterY=%.1f</string>
+    <string name="icon_position">Icon #%d (id=%d): t=%.2f, cx=%.1f, cy=%.1f</string>
+    <string name="row_item_inserted">Row %d item #%d inserted at front, total: %d</string>
+    <string name="row_fullscreen">Row %d: %d icons (full screen, margin=%.1fpx, distanceFromBottom=%.1fpx, inserted at front)</string>
+    <string name="row_arc">Row 1: %d items (arc layout, useFanTouchRegion=%s, appended at end)</string>
+
+    <!-- View Addition -->
+    <string name="mrect_not_found">mRectF not found for item class %s, skip addView</string>
+    <string name="rect_null">rect is null for item class %s, skip addView</string>
+    <string name="items_added">Added %d items to ViewGroup successfully</string>
+    <string name="row_layout_summary">Row 1: arc animation, other rows: custom layout</string>
+
+    <!-- Configuration Loading -->
+    <string name="config_loading">Loading config using LSPosed XSharedPreferences...</string>
+    <string name="config_module_package">Module package: %s</string>
+    <string name="config_prefs_name">Prefs name: %s</string>
+    <string name="config_cannot_read">Cannot read XSharedPreferences file</string>
+    <string name="config_file_path">File path: %s</string>
+    <string name="config_file_exists">File exists: %s</string>
+    <string name="config_can_read">Can read: %s</string>
+    <string name="config_possible_reasons">Possible reasons:</string>
+    <string name="config_reason1">Module UI never opened (config file not created yet)</string>
+    <string name="config_reason2">Module not using MODE_WORLD_READABLE in getSharedPreferences()</string>
+    <string name="config_reason3">xposedminversion &lt; 93 in AndroidManifest.xml</string>
+    <string name="config_reason4">LSPosed version too old (need API 93+)</string>
+    <string name="config_fallback">Using default fallback configuration</string>
+    <string name="config_readable">XSharedPreferences file is readable</string>
+
+    <!-- JSON Config Parsing -->
+    <string name="json_no_key">No \'row_configs\' key found in SharedPreferences</string>
+    <string name="json_loaded_success">Successfully read config JSON: %d chars</string>
+    <string name="json_parsed_rows">Successfully loaded %d row configurations</string>
+    <string name="json_empty">Config JSON is empty</string>
+    <string name="json_parsing">Parsing JSON config: %d chars</string>
+    <string name="json_parsed_info">Parsed JSON: version=%d, timestamp=%s, rows=%d</string>
+    <string name="json_parse_failed">Failed to parse JSON config: %s</string>
+    <string name="json_row_info">Parsed row %d (%s): enabled=%s, offset=%.1f, margin=%.1f, spacing=%.1f, items=%s</string>
+
+    <!-- Custom Icons -->
+    <string name="custom_config_not_accessible">Config file not accessible</string>
+    <string name="custom_no_icons">No custom icons configured</string>
+    <string name="custom_id_not_found">Custom icon ID %d not found in config</string>
+    <string name="custom_load_failed">Failed to load custom icon %d: %s</string>
+
+    <!-- Common Constants (not used in UI, for reference) -->
+    <string name="prefs_name">miui_config</string>
+    <string name="prefs_module_status">module_status</string>
+    <string name="key_xposed_active">xposed_active</string>
+    <string name="target_package">com.android.systemui</string>
+    <string name="module_package">com.jingyu233.miuiquickopenhook</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- LSPosed 推荐的作用域应用 -->
+    <string-array name="module_scope">
+        <item>com.android.systemui</item>
+    </string-array>
+</resources>
